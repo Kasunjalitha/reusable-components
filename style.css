@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.counter-container{
+    display: flex;
+    width: fit-content;
+    padding: 16px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 7px;
+    margin: 20px;
+}
+
+.counter-value{
+    border: 1px solid rgb(206, 206, 206);
+    font-size: 1.5rem;
+    flex-basis: 100px;
+    min-width: 100px;
+    margin-right: 16px;
+    padding: 0 7px;
+    text-align: end;
+}
+
+.counter-increment, .counter-decrement{
+    width: 30px;
+    margin-right: 7px;
+}
+
+.counter-increment, .counter-decrement, .counter-reset{
+    padding: 5px 7px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: backgound-color 0.2s ease-in-out;
+}
+
+.counter-value, .counter-increment, .counter-decrement, .counter-reset{
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.counter-increment{
+    background-color: rgb(50, 215, 75);
+}
+
+.counter-increment:hover{
+    background-color: rgb(40, 205, 65);
+}
+
+.counter-decrement{
+    background-color: rgb(255, 159, 10);
+}
+
+.counter-decrement:hover{
+    background-color: rgb(255, 149, 0);
+}
+
+.counter-reset{
+    background-color: rgb(10, 132, 255);
+}
+
+.counter-reset:hover{
+    background-color: rgb(0, 122, 255);
+}
